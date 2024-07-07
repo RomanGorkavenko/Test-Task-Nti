@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  postgres-client:
+    image: postgres:15.6-alpine3.19
+    container_name: client-postgres
+    environment:
+      POSTGRES_DB: client_db
+      POSTGRES_USER: client
+      POSTGRES_PASSWORD: client
+    ports:
+      - "55325:5432"

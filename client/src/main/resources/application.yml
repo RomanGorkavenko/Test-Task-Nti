@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: client
+  datasource:
+    url: jdbc:postgresql://localhost:55325/client_db?currentSchema=client
+    username: client
+    password: client
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    default-schema: client
